@@ -1,7 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-var text =
-  <h1>hello</h1>;
+const App = React.createClass({
+  
+  getInitialState() {
+    return {
 
-ReactDOM.render(text, document.getElementById('root'));
+    };
+  },
+  
+  render(){
+    return(
+      <h1>hello</h1>
+    )
+  }
+});
+
+
+export default App
