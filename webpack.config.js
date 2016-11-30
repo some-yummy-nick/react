@@ -13,10 +13,21 @@ module.exports = {
       test: /\.jsx?$/,
       loader:'babel',
       query: {
-        presets: ['es2015','react']
+        presets: ['es2015','react', 'stage-0']
       }
     }]
   },
 
-  devtool: '#cheap-module-source-map'
+  devtool: 'eval-source-map',
+
+  devServer:{
+    inline:true,
+    contentBase:'./public',
+    port:3000
+  },
+
+  resolve:{
+    extensions:['', '.js', '.jsx']
+  }
+
 };

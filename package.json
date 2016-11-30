@@ -1,19 +1,15 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yeffasol/react.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --content-base ./public",
+    "start": "webpack-dev-server --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+
   "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
