@@ -11,10 +11,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loader:'babel',
-      query: {
-        presets: ['es2015','react', 'stage-0']
-      }
+      loader:'babel'
     }]
   },
 
@@ -23,6 +20,7 @@ module.exports = {
   devServer:{
     inline:true,
     contentBase:'./public',
+    hot: true,
     port:3000
   },
 

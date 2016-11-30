@@ -10,7 +10,7 @@ const App = React.createClass({
   
   render(){
     return(
-      <h1>hell</h1>
+      <h1>hello</h1>
     )
   }
 });

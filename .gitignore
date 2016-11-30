@@ -1,6 +1,6 @@
 node_modules/
 source/lib/bower/
-dist/
+bundle.js
 .publish/
 .idea/
 *.log
