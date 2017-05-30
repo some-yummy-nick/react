@@ -1,7 +1,7 @@
 node_modules/
-source/lib/bower/
 bundle.js
 .publish/
+public/
 .idea/
 *.log
 Thumbs.db

@@ -1,31 +1,29 @@
-const webpack = require('webpack');
+const webpack = require('webpack'),
+      path = require("path");
 
 module.exports = {
   entry: './source/main.jsx',
 
   output: {
     filename: 'bundle.js',
-    path: './public'
+    path: path.resolve(__dirname, "public")
   },
 
   module: {
-    loaders: [{
+    rules: [{
       test: /\.jsx?$/,
-      loader:'babel'
+      use:'babel-loader'
     }]
   },
 
-  devtool: 'eval-source-map',
-
-  devServer:{
-    inline:true,
-    contentBase:'./public',
-    hot: true,
-    port:3000
+  devServer: {
+    contentBase: path.join(__dirname, "public"),
+    compress: true,
+    host: "192.168.0.112",
+    port: 3000,
+    stats: "errors-only"
   },
-
   resolve:{
-    extensions:['', '.js', '.jsx']
+    extensions:['.js', '.jsx']
   }
-
 };
